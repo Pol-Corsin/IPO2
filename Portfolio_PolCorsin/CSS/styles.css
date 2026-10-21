@@ -93,7 +93,7 @@ h2 {
 /* Pol Corsin */
 #hello {
     position: relative;
-    padding: clamp(5px, 5vw, 4rem) 0 clamp(30px, 7vw, 5rem);
+    padding: 0 0 clamp(30px, 7vw, 5rem);
     background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
     background-size: 48px 48px;
     background-position: -1px -1px;
@@ -105,12 +105,12 @@ h2 {
     position: absolute;
     inset: 0;
     background: linear-gradient(to bottom, transparent 55%, var(--bg));
-    pointer-events: none
+    pointer-events: none;
 }
 
 #hello .wrap {
     position: relative;
-    z-index: 1
+    z-index: 1;
 }
 
 .theme {
