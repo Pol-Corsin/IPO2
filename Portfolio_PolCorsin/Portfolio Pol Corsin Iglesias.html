@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Pol Corsin Iglesias | Web Application Developer</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Source+Serif+4:wght@400;600&display=swap">
+  <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+
+  <header id="hello">
+    <div class="wrap">
+      <button class="theme" id="theme" type="button" aria-label="Switch light or dark theme">Light / dark</button>
+      <h1 class="name" aria-label="Pol Corsin Iglesias">
+        <span><i>Pol</i></span><span><i>Corsin</i></span><span><i>Iglesias</i></span>
+      </h1>
+      <p class="role">Higher Technician in Web Application Development.</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap" id="container">
+      <aside id="personal-card">
+        <!-- Replace the PC block with: <img src="resources/photo.jpg" alt="Pol Corsin Iglesias"> -->
+        <div class="photo" role="img" aria-label="Photo placeholder">PC</div>
+        <p>Open to junior web development roles and internships.</p>
+        <div class="links">
+          <a class="btn main" href="#" rel="noopener">Europass CV</a>
+          <a class="btn" href="#" rel="noopener">LinkedIn</a>
+          <a class="btn" href="#" rel="noopener">GitHub</a>
+        </div>
+      </aside>
+
+      <section id="intro">
+        <p>I’m a <b>self-demanding</b> and <b>perfectionist</b> person. Trying to improve is my main objective, both
+          personally and in terms of learning.</p>
+        <p>To always strive for improvement, I set goals for both the short and long term. For example:</p>
+        <ul>
+          <li>To be totally self-sufficient.</li>
+          <li>Finish my studies with a good grade.</li>
+          <li>Having a healthy relationship with the people around me.</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="divider" aria-hidden="true"></div>
+
+    <section id="why">
+      <div class="wrap">
+        <h2>Why I code</h2>
+        <p>I chose this path for the creativity it demands, the logic behind programming languages, the joy of solving
+          problems, and the search for perfection in the code.</p>
+        <p>I believe we can all achieve our objectives if there is a reason that pushes us to do it. It can be anything.
+        </p>
+      </div>
+    </section>
+
+    <div class="wrap skills">
+      <section class="notice hardskills">
+        <h2>Hard skills</h2>
+        <!-- Edit this list with your real technical skills -->
+        <ul class="chips">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>SQL</li>
+          <li>Git</li>
+        </ul>
+      </section>
+      <section class="notice softskills">
+        <h2>Soft skills</h2>
+        <ul class="chips">
+          <li>Self-demanding</li>
+          <li>Attention to detail</li>
+          <li>Problem solving</li>
+          <li>Continuous improvement</li>
+          <li>Learning from others</li>
+          <li>Solidarity</li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="notice missionstatement">
+      <div class="wrap">
+        <h2>Mission</h2>
+        <div>
+          <p>My mission is to continually strive for self-improvement, pushing my own limits and inspiring those around
+            me to do the same. I believe in the power of learning from others to achieve goals.</p>
+          <p>Beyond my personal ambitions, I am committed to making a meaningful impact through solidarity. This year,
+            my journey takes me to Morocco, where I will participate in a charitable rally, combining my passion for
+            adventure with the drive to help those in need. Through this experience, I aim to use my skills and
+            resources to create positive change, reinforcing my belief that true success is measured not only by
+            personal achievement but by the contributions we make to others.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap"><span>© 2026 Pol Corsin Iglesias</span><span>Web Application Developer</span></div>
+  </footer>
+
+  <script>
+    document.getElementById('theme').addEventListener('click', function () {
+      var root = document.documentElement;
+      var cur = root.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      root.setAttribute('data-theme', cur === 'dark' ? 'light' : 'dark');
+    });
+  </script>
+</body>
+
+</html>
